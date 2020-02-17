@@ -24,7 +24,7 @@ describe MarvelService do
     expect(c["data"]["results"].first["firstName"]).to eq("Jack")
   end
 
-  it 'can get a list of creators by first name' do
+  xit 'can get a list of creators by first name' do
     c = @m.creators(first_name: "brian")
 
     expect(c["data"]["results"][4]["lastName"]).to eq("Bendis")
